@@ -1,0 +1,93 @@
+/* Navigation */
+#navId {
+  position: relative;
+}
+.navWrapper {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: rgba(252, 252, 252, 0.9);
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70px;
+  overflow: hidden;
+  transition: height 0.8s;
+}
+.navWrapper ul {
+  margin-top: 15%;
+  padding: 0;
+}
+.navOpen {
+  height: 100vh;
+}
+
+/* Menu */
+.menuButton {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menuIcon {
+  width: 25px;
+  height: 2px;
+  background: #000000;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  background: #000000;
+  position: absolute;
+  border-radius: 5px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+}
+.menuIcon::before {
+  transform: translate(-13px, 10px);
+  width: 30px;
+}
+.menuIcon::after {
+  transform: translate(-13px, -10px);
+  width: 30px;
+}
+
+/* Menu Animation */
+.menuButton.menuOpen .menuIcon {
+  background: transparent;
+  transform: translateX(-15px);
+}
+.menuButton.menuOpen .menuIcon::before {
+  transform: rotate(-225deg);
+}
+.menuButton.menuOpen .menuIcon::after {
+  transform: rotate(225deg);
+}
+
+/* List Items */
+.listItem {
+  display: flex;
+  padding: 1em;
+  font-size: 1.9em;
+  text-decoration: none;
+  list-style: none;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+
+.listItem:hover {
+  font-weight: bold;
+  transition: linear 0.5s;
+  border-bottom: 1px solid #fafafa;
+}

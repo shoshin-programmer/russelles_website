@@ -1,0 +1,22 @@
+.mainWrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+.title {
+  letter-spacing: 2px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.text {
+  letter-spacing: 1.5px;
+  font-size: 1.5em;
+}
+.profilePic{
+  height: 50vh;
+  max-width: 80vw;
+  border-radius: 200px;
+}

@@ -1,0 +1,21 @@
+.layout {
+  /* <img className={styles.pseudoBackground} src="/assets/plant_bg.jpg" /> */
+  background: linear-gradient(rgba(252, 252, 252, 0.2), rgba(252, 252, 252, 0.2)),
+    url("/assets/plant_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 13px rgba(175, 177, 193, 0.15),
+    0 6px 20px rgba(24, 29, 39, 0.05);
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  margin-top: 30px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.content {
+  width: 100vw;
+  z-index: 1;
+  padding: 20px;
+  background: rgba(252, 252, 252, 0.5);
+}
